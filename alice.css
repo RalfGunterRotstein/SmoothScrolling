@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/* Alice in Wonderland */
+@font-face {
+  font-family: "Alice in Wonderland";
+  font-weight: normal;
+  src: local(""), url("/fonts/alice-in-wonderland.woff2") format("woff2"), url("/fonts/alice-in-wonderland.woff") format("woff");
+}
+
+/* Alice */
+@font-face {
+  font-family: "Alice";
+  src: local(""), url("/fonts/alice.woff2") format("woff2"), url("/fonts/alice.woff") format("woff");
+}
+
+/* Lewis Carroll */
+@font-face {
+  font-family: "Lewis Carroll";
+  src: local(""), url("/fonts/lewis-carroll.woff2") format("woff2"), url("/fonts/lewis-carroll.woff") format("woff");
+}
+
+/* line 1, ../../xampp/htdocs/scss/_containers.scss */
+body {
+  background-color: aliceblue;
+}
+
+/* line 5, ../../xampp/htdocs/scss/_containers.scss */
+header {
+  background-color: #153879;
+  color: aliceblue;
+  transition: 0.3s linear;
+}
+
+/* line 10, ../../xampp/htdocs/scss/_containers.scss */
+header b {
+  transition: 0.3s linear;
+}
+
+/* line 14, ../../xampp/htdocs/scss/_containers.scss */
+header:hover {
+  color: #4d7eda;
+}
+
+/* line 17, ../../xampp/htdocs/scss/_containers.scss */
+header:hover b {
+  color: aliceblue;
+}
+
+/* line 22, ../../xampp/htdocs/scss/_containers.scss */
+header #logo {
+  border: none;
+  color: inherit;
+  display: block;
+  text-align: center;
+  padding: 24px;
+}
+
+/* line 31, ../../xampp/htdocs/scss/_containers.scss */
+header #logo span:nth-of-type(1) {
+  display: block;
+  font-size: 64px;
+  font-family: "Alice";
+}
+
+/* line 37, ../../xampp/htdocs/scss/_containers.scss */
+header #logo span:nth-of-type(2) {
+  display: block;
+  font-size: 16px;
+}
+
+/* line 44, ../../xampp/htdocs/scss/_containers.scss */
+#intro {
+  background-color: #d1e0ec;
+  padding: 32px 0;
+}
+
+/* line 49, ../../xampp/htdocs/scss/_containers.scss */
+main {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 8px;
+}
+
+/* line 56, ../../xampp/htdocs/scss/_containers.scss */
+.book h2 {
+  font-family: "Alice in Wonderland";
+  text-align: center;
+}
+
+/* line 60, ../../xampp/htdocs/scss/_containers.scss */
+.book h2::after {
+  width: 0;
+  border: 2px solid;
+  margin: 8px auto 8px auto;
+  border-radius: 50%;
+}
+
+/* line 68, ../../xampp/htdocs/scss/_containers.scss */
+.book h3 {
+  font-family: "Lewis Carroll";
+}
+
+/* line 71, ../../xampp/htdocs/scss/_containers.scss */
+.book h3::after {
+  content: " ";
+  display: block;
+  width: 128px;
+  margin: 8px auto;
+  border-bottom: 2px solid;
+}
+
+/* line 81, ../../xampp/htdocs/scss/_containers.scss */
+.book p {
+  font-family: "Lewis Carroll";
+}
+
+/* line 86, ../../xampp/htdocs/scss/_containers.scss */
+.poem p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* line 93, ../../xampp/htdocs/scss/_containers.scss */
+.speech {
+  font-style: italic;
+  font-weight: 200;
+}
+
+/* line 100, ../../xampp/htdocs/scss/_containers.scss */
+#return-link__div {
+  margin-top: 32px;
+  text-align: center;
+}
+
+/* line 105, ../../xampp/htdocs/scss/_containers.scss */
+div.quote {
+  margin-top: 32px;
+  padding-top: 32px;
+  background-color: #d1e0ec;
+}
+
+/* line 111, ../../xampp/htdocs/scss/_containers.scss */
+div.quote p.quote__text {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  padding: 0 8px;
+  color: #153879;
+  text-align: center;
+  font-style: italic;
+}
+
+/* line 112, ../../xampp/htdocs/scss/_containers.scss */
+div.quote p.quote__text::before {
+  content: "“";
+  font-family: "Alice";
+  color: #000;
+  font-size: 1.5em;
+  display: inline-block;
+  margin-top: -64px;
+  position: relative;
+  left: -4px;
+  top: 4px;
+}
+
+/* line 135, ../../xampp/htdocs/scss/_containers.scss */
+div.quote p.quote__text::after {
+  content: "”";
+  font-family: "Alice";
+  color: #000;
+  font-size: 1.5em;
+  display: inline-block;
+  margin-top: -64px;
+  position: relative;
+  top: 4px;
+}
+
+/* line 149, ../../xampp/htdocs/scss/_containers.scss */
+div.quote span.quote__author {
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+  font-family: "Alice";
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+
+/* line 150, ../../xampp/htdocs/scss/_containers.scss */
+div.quote span.quote__author::before {
+  content: " ";
+  display: block;
+  width: 16px;
+  margin: 8px auto;
+  height: 1px;
+  border-bottom: 1px solid #000;
+}
+
+/* line 172, ../../xampp/htdocs/scss/_containers.scss */
+footer {
+  background-color: #153879;
+}
+
+/* line 175, ../../xampp/htdocs/scss/_containers.scss */
+footer a {
+  display: block;
+  padding: 8px;
+  color: aliceblue;
+  border: none;
+  text-align: center;
+  font-family: "Alice";
+  text-transform: uppercase;
+}
+
+/* line 1, ../../xampp/htdocs/scss/_text.scss */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* line 5, ../../xampp/htdocs/scss/_text.scss */
+h1 {
+  font-family: "Alice";
+  font-size: 48px;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* line 11, ../../xampp/htdocs/scss/_text.scss */
+h1 + p {
+  text-align: center;
+  max-width: 75%;
+  width: 400px;
+  margin: 8px auto;
+  border-top: 2px solid;
+}
+
+/* line 21, ../../xampp/htdocs/scss/_text.scss */
+h2 {
+  font-family: "Alice";
+  margin-top: 64px;
+  font-size: 32px;
+  border-top: 2px solid;
+  padding-top: 16px;
+}
+
+/* line 29, ../../xampp/htdocs/scss/_text.scss */
+main > h2:first-of-type, h2.no-border-top,
+#crossword-article h2 {
+  margin-top: 32px;
+  border-top: 0;
+  padding-top: 0;
+}
+
+/* line 38, ../../xampp/htdocs/scss/_text.scss */
+h2::after {
+  content: " ";
+  display: block;
+  width: 64px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid;
+}
+
+/* line 48, ../../xampp/htdocs/scss/_text.scss */
+h3 {
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* line 53, ../../xampp/htdocs/scss/_text.scss */
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* line 57, ../../xampp/htdocs/scss/_text.scss */
+p.asterism,
+pre {
+  overflow-x: hidden;
+  /* For some crazy things in Alice’s Adventures in Wonderland. */
+}
+
+/* line 62, ../../xampp/htdocs/scss/_text.scss */
+p + p {
+  margin-top: 16px;
+}
+
+/* line 66, ../../xampp/htdocs/scss/_text.scss */
+b {
+  font-family: "Alice";
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #4d7eda;
+}
+
+/* line 73, ../../xampp/htdocs/scss/_text.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 2px solid #4d7eda;
+  transition: 0.3s linear;
+}
+
+/* line 80, ../../xampp/htdocs/scss/_text.scss */
+a:hover {
+  color: #4d7eda;
+  border-color: #000;
+}
+
+/* line 1, ../../xampp/htdocs/scss/_lists.scss */
+ul {
+  list-style: none;
+  margin-top: 8px;
+}
+
+/* line 5, ../../xampp/htdocs/scss/_lists.scss */
+ul li {
+  text-indent: -8px;
+}
+
+/* line 8, ../../xampp/htdocs/scss/_lists.scss */
+ul li::before {
+  content: "— ";
+}
+
+/* line 1, ../../xampp/htdocs/scss/_others.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 5, ../../xampp/htdocs/scss/_others.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=alice.css.map */
